@@ -140,6 +140,31 @@ def main() -> None:
             both.loc[both["n"] >= 500, "pae_shrunk"], both.loc[both["n"] >= 500, "pae_shrunk_loc"])[0, 1]),
     }
 
+    # Added robustness (DEVIATIONS.md): league-wide makes drift from season to season (out-of-sample
+    # xFG cannot know a season's level in advance), so repeat the tests with PAE centered within season.
+    out["league_mean_pae_by_season"] = ps.groupby("season").apply(
+        lambda g: float(np.average(g["pae"], weights=g["n"]))).to_dict()
+    def center(t, col="pae", w="n"):
+        means = t.groupby("season").apply(lambda g: np.average(g[col], weights=g[w]))
+        return t[col] - t["season"].map(means)
+
+    psc = skill.pae_table(x, ["season", "person_id"])
+    psc["pae"] = center(psc)
+    psc = skill.shrink(psc)
+    shc = skill.split_half(x, MIN_SPLIT)
+    for h in ("odd", "even"):
+        shc[f"pae_{h}"] = center(shc, f"pae_{h}", f"n_{h}")
+    pc = skill.consecutive(psc, "person_id", MIN_SPLIT)
+    out["robustness_season_centered"] = {
+        "split_half_r_pae": float(np.corrcoef(shc["pae_odd"], shc["pae_even"])[0, 1]),
+        "year_to_year_r_shrunk": float(np.corrcoef(pc["pae_shrunk"], pc["pae_next"])[0, 1]),
+        "wmse_zero": skill.wmse(pc["pae_next"], 0, pc["n_next"]),
+        "wmse_raw": skill.wmse(pc["pae_next"], pc["pae"], pc["n_next"]),
+        "wmse_shrunk": skill.wmse(pc["pae_next"], pc["pae_shrunk"], pc["n_next"]),
+        "corr_with_main_pae_shrunk_500_plus": float(np.corrcoef(
+            ps.loc[ps["n"] >= 500, "pae_shrunk"], psc.loc[psc["n"] >= 500, "pae_shrunk"])[0, 1]),
+    }
+
     with open(OUT / "skill_summary.json", "w") as f:
         json.dump(out, f, indent=2, default=float)
     print(json.dumps(out, indent=2, default=float))
