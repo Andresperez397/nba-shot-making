@@ -1,22 +1,4 @@
 {
-  "2016": {
-    "events": 697656,
-    "regular_season_events": 599827,
-    "regular_season_games": 1230,
-    "fga": 208049,
-    "dropped_missing_result_or_side": 0,
-    "dropped_heaves": 563,
-    "analysis_shots": 207486
-  },
-  "2017": {
-    "events": 688123,
-    "regular_season_events": 597984,
-    "regular_season_games": 1230,
-    "fga": 210114,
-    "dropped_missing_result_or_side": 0,
-    "dropped_heaves": 634,
-    "analysis_shots": 209480
-  },
   "2018": {
     "events": 671661,
     "regular_season_events": 592820,

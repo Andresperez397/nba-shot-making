@@ -1,0 +1,11 @@
+{
+  "best_by_block": {
+    "M0": "M0 constant",
+    "M1": "M1 distance",
+    "M2": "M2 hgb",
+    "M3": "M3 hgb",
+    "M4": "M4 hgb"
+  },
+  "xfg_model": "M4 hgb",
+  "top_block": "M4"
+}

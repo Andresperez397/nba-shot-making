@@ -1,0 +1,282 @@
+{
+  "2020": {
+    "M0 constant": {},
+    "M1 distance": {},
+    "M2 logit": {
+      "C": 7.742636826811277,
+      "holdout_logloss": 0.6518428655944907,
+      "C_index": 7
+    },
+    "M2 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "iters": 100,
+      "holdout_logloss": 0.6491697758442395
+    },
+    "M3 logit": {
+      "C": 2.1544346900318843,
+      "holdout_logloss": 0.637097617123429,
+      "C_index": 6
+    },
+    "M3 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 200,
+      "holdout_logloss": 0.6364826277825085
+    },
+    "M4 logit": {
+      "C": 27.825594022071257,
+      "holdout_logloss": 0.6367238312617179,
+      "C_index": 8
+    },
+    "M4 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.1,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6356470499190341
+    }
+  },
+  "2021": {
+    "M0 constant": {},
+    "M1 distance": {},
+    "M2 logit": {
+      "C": 27.825594022071257,
+      "holdout_logloss": 0.6506310969228506,
+      "C_index": 8
+    },
+    "M2 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "iters": 100,
+      "holdout_logloss": 0.6486680725092688
+    },
+    "M3 logit": {
+      "C": 0.01291549665014884,
+      "holdout_logloss": 0.6375309924276821,
+      "C_index": 2
+    },
+    "M3 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "iters": 100,
+      "holdout_logloss": 0.6367964887027209
+    },
+    "M4 logit": {
+      "C": 2.1544346900318843,
+      "holdout_logloss": 0.6371934850429164,
+      "C_index": 6
+    },
+    "M4 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.1,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6359914570036638
+    }
+  },
+  "2022": {
+    "M0 constant": {},
+    "M1 distance": {},
+    "M2 logit": {
+      "C": 7.742636826811277,
+      "holdout_logloss": 0.6595109803057491,
+      "C_index": 7
+    },
+    "M2 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "iters": 100,
+      "holdout_logloss": 0.6586035606892325
+    },
+    "M3 logit": {
+      "C": 0.001,
+      "holdout_logloss": 0.644344679594735,
+      "C_index": 0
+    },
+    "M3 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6439582452491287
+    },
+    "M4 logit": {
+      "C": 0.001,
+      "holdout_logloss": 0.6441780753996706,
+      "C_index": 0
+    },
+    "M4 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.643044985766233
+    }
+  },
+  "2023": {
+    "M0 constant": {},
+    "M1 distance": {},
+    "M2 logit": {
+      "C": 27.825594022071257,
+      "holdout_logloss": 0.6539589910682256,
+      "C_index": 8
+    },
+    "M2 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "iters": 100,
+      "holdout_logloss": 0.6503009432700886
+    },
+    "M3 logit": {
+      "C": 0.001,
+      "holdout_logloss": 0.6407911186249332,
+      "C_index": 0
+    },
+    "M3 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 200,
+      "holdout_logloss": 0.6402523842752773
+    },
+    "M4 logit": {
+      "C": 0.001,
+      "holdout_logloss": 0.6406473268182953,
+      "C_index": 0
+    },
+    "M4 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.639524934202388
+    }
+  },
+  "2024": {
+    "M0 constant": {},
+    "M1 distance": {},
+    "M2 logit": {
+      "C": 2.1544346900318843,
+      "holdout_logloss": 0.6548464869614476,
+      "C_index": 6
+    },
+    "M2 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6514743306818132
+    },
+    "M3 logit": {
+      "C": 0.001,
+      "holdout_logloss": 0.642705736121091,
+      "C_index": 0
+    },
+    "M3 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "iters": 100,
+      "holdout_logloss": 0.6417175243594113
+    },
+    "M4 logit": {
+      "C": 0.001,
+      "holdout_logloss": 0.6424524643177931,
+      "C_index": 0
+    },
+    "M4 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6410850204859502
+    }
+  },
+  "2025": {
+    "M0 constant": {},
+    "M1 distance": {},
+    "M2 logit": {
+      "C": 7.742636826811277,
+      "holdout_logloss": 0.6555218521791524,
+      "C_index": 7
+    },
+    "M2 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6521047716341446
+    },
+    "M3 logit": {
+      "C": 0.001,
+      "holdout_logloss": 0.643876878564617,
+      "C_index": 0
+    },
+    "M3 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 50,
+      "iters": 100,
+      "holdout_logloss": 0.6427116808525833
+    },
+    "M4 logit": {
+      "C": 0.003593813663804626,
+      "holdout_logloss": 0.6436262465558009,
+      "C_index": 1
+    },
+    "M4 hgb": {
+      "max_leaf_nodes": 31,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6420246730910218
+    }
+  },
+  "2026": {
+    "M0 constant": {},
+    "M1 distance": {},
+    "M2 logit": {
+      "C": 7.742636826811277,
+      "holdout_logloss": 0.6553139660688047,
+      "C_index": 7
+    },
+    "M2 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.651808928532517
+    },
+    "M3 logit": {
+      "C": 7.742636826811277,
+      "holdout_logloss": 0.6438897680862309,
+      "C_index": 7
+    },
+    "M3 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 100,
+      "holdout_logloss": 0.6425737852399265
+    },
+    "M4 logit": {
+      "C": 7.742636826811277,
+      "holdout_logloss": 0.6436707283787627,
+      "C_index": 7
+    },
+    "M4 hgb": {
+      "max_leaf_nodes": 15,
+      "learning_rate": 0.05,
+      "min_samples_leaf": 500,
+      "iters": 200,
+      "holdout_logloss": 0.6418899118261996
+    }
+  }
+}

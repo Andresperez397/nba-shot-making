@@ -38,9 +38,15 @@ def auc(y, p) -> float:
 def calibration(y, p) -> dict:
     """Logistic recalibration (slope 1, intercept 0 = calibrated) and 10-bin expected calibration error."""
     y = np.asarray(y, float)
+    p = np.asarray(p, float)  # positional indexing below; a pandas Series would index by label
     lp = np.log(clip(p) / (1 - clip(p)))
-    slope = sm.GLM(y, sm.add_constant(lp), family=sm.families.Binomial()).fit().params[1]
-    intercept = sm.GLM(y, np.ones_like(lp), family=sm.families.Binomial(), offset=lp).fit().params[0]
+    if np.ptp(lp) == 0:  # a constant forecast has no slope
+        slope = float("nan")
+    else:
+        slope = np.asarray(sm.GLM(y, np.column_stack([np.ones_like(lp), lp]),
+                                  family=sm.families.Binomial()).fit().params)[1]
+    recal = sm.GLM(y, np.ones_like(lp), family=sm.families.Binomial(), offset=lp).fit()
+    intercept = np.asarray(recal.params)[0]
     bins = pd.qcut(rankdata(p, method="ordinal"), 10, labels=False)
     df = pd.DataFrame({"y": y, "p": p, "b": bins})
     g = df.groupby("b").agg(n=("y", "size"), y=("y", "mean"), p=("p", "mean"))

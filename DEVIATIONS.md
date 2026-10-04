@@ -11,6 +11,10 @@ Every change made after the plan was frozen (commit 8c2a03d) is logged here, dat
   - **New test seasons:** Q1 tests on 2019-20 to 2025-26 (seven seasons, each trained on two or more seasons from 2017-18). Q2–Q4 use the same seven seasons, so Q3b and Q4 have six consecutive season pairs instead of eight.
   - **What is unchanged:** every model, grid, metric and decision rule is as planned.
 
+- **2026-10-04, added robustness check (Q3):** the shot-making stability tests repeated with location-only expected makes (Q1 M2 boosting).
+  - **Why:** shot-type labels are assigned by scorers after the play and gave the largest gain in Q1. Using location-only expected makes tests whether the conclusions depend on those labels.
+  - **Result:** they do not. Split-half r is 0.47 (main 0.44), year-to-year r of shrunk shot-making is 0.56 (main 0.55), and the two shot-making estimates correlate 0.96 for player-seasons with at least 500 attempts.
+
 - **2026-10-03, before any Q1 result (computational):** hyperparameter tuning fits each setting on a fixed random sample of 300,000 shots from the seasons before the holdout season, instead of all of them.
   - **Why:** a timing test showed the full gradient-boosting grid would take about 10 hours. The sample cuts that to about 3.5.
   - **What is unchanged:** both learners use the same sample, so tuning stays equally fair. Holdout scoring still uses the whole holdout season, and every final model is refit on all training seasons.

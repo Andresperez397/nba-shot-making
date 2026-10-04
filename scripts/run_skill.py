@@ -120,6 +120,26 @@ def main() -> None:
     q4["sd"] = {k: float(teams[k].std()) for k in ("xpps_off", "pae_off", "xpps_def", "pae_def")}
     out["q4_team_year_to_year"] = q4
 
+    # Added robustness (DEVIATIONS.md): the same stability tests with location-only expected makes
+    # (Q1 M2 boosting), which use no scorer-assigned shot-type label.
+    cols = ["game_id", "order_index", "M2 hgb"]
+    q1 = pd.concat([pd.read_parquet(DERIVED / f"q1_season_{s}.parquet", columns=cols)
+                    for s in sorted(x["season"].unique())])
+    xl = x.drop(columns="xfg").merge(q1.rename(columns={"M2 hgb": "xfg"}), on=["game_id", "order_index"])
+    assert len(xl) == len(x)
+    psl = skill.shrink(skill.pae_table(xl, ["season", "person_id"]))
+    shl = skill.split_half(xl, MIN_SPLIT)
+    pl = skill.consecutive(psl, "person_id", MIN_SPLIT)
+    both = ps.merge(psl, on=["season", "person_id"], suffixes=("", "_loc"))
+    out["robustness_location_only_xfg"] = {
+        "split_half_r_pae": float(np.corrcoef(shl["pae_odd"], shl["pae_even"])[0, 1]),
+        "year_to_year_r_shrunk": float(np.corrcoef(pl["pae_shrunk"], pl["pae_next"])[0, 1]),
+        "wmse_zero": skill.wmse(pl["pae_next"], 0, pl["n_next"]),
+        "wmse_shrunk": skill.wmse(pl["pae_next"], pl["pae_shrunk"], pl["n_next"]),
+        "corr_with_main_pae_shrunk_500_plus": float(np.corrcoef(
+            both.loc[both["n"] >= 500, "pae_shrunk"], both.loc[both["n"] >= 500, "pae_shrunk_loc"])[0, 1]),
+    }
+
     with open(OUT / "skill_summary.json", "w") as f:
         json.dump(out, f, indent=2, default=float)
     print(json.dumps(out, indent=2, default=float))

@@ -114,6 +114,10 @@ def test_metrics_and_bootstrap():
     q = rng.uniform(0.05, 0.95, 200000)
     cal = metrics.calibration(rng.binomial(1, q), q)
     assert abs(cal["cal_slope"] - 1) < 0.03 and abs(cal["cal_intercept"]) < 0.03
+    yy = rng.binomial(1, q[:5000])
+    series = pd.Series(q[:5000], index=np.arange(5000) + 10**6)  # pandas input with an arbitrary index
+    assert metrics.calibration(yy, series) == metrics.calibration(yy, q[:5000])
+    assert np.isnan(metrics.calibration(yy, np.full(5000, 0.4))["cal_slope"])
     game = np.repeat(np.arange(30), 5)
     season = np.repeat([1, 2, 3], 50)
     w = metrics.boot_weights(game, season, n_boot=10)
