@@ -1,0 +1,326 @@
+{
+  "schedule": {
+    "2016": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2017": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2018": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2019": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2020": {
+      "scheduled": 1059,
+      "with_pbp": 1059,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2021": {
+      "scheduled": 1080,
+      "with_pbp": 1080,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2022": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2023": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2024": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2025": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    },
+    "2026": {
+      "scheduled": 1230,
+      "with_pbp": 1230,
+      "missing": [],
+      "pbp_not_scheduled": []
+    }
+  },
+  "load_log": {
+    "2016": {
+      "events": 697656,
+      "regular_season_events": 599827,
+      "regular_season_games": 1230,
+      "fga": 208049,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 208049
+    },
+    "2017": {
+      "events": 688123,
+      "regular_season_events": 597984,
+      "regular_season_games": 1230,
+      "fga": 210114,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 210114
+    },
+    "2018": {
+      "events": 671661,
+      "regular_season_events": 592820,
+      "regular_season_games": 1230,
+      "fga": 211707,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 211707
+    },
+    "2019": {
+      "events": 697595,
+      "regular_season_events": 613435,
+      "regular_season_games": 1230,
+      "fga": 219458,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 219458
+    },
+    "2020": {
+      "events": 573047,
+      "regular_season_events": 530495,
+      "regular_season_games": 1059,
+      "fga": 188116,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 188116
+    },
+    "2021": {
+      "events": 596148,
+      "regular_season_events": 526268,
+      "regular_season_games": 1080,
+      "fga": 190983,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 190983
+    },
+    "2022": {
+      "events": 679676,
+      "regular_season_events": 600718,
+      "regular_season_games": 1230,
+      "fga": 216722,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 216722
+    },
+    "2023": {
+      "events": 684226,
+      "regular_season_events": 603785,
+      "regular_season_games": 1230,
+      "fga": 217219,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 217219
+    },
+    "2024": {
+      "events": 678771,
+      "regular_season_events": 598705,
+      "regular_season_games": 1230,
+      "fga": 218702,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 218702
+    },
+    "2025": {
+      "events": 689823,
+      "regular_season_events": 606536,
+      "regular_season_games": 1230,
+      "fga": 219527,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 219527
+    },
+    "2026": {
+      "events": 707440,
+      "regular_season_events": 621881,
+      "regular_season_games": 1230,
+      "fga": 219159,
+      "dropped_missing_result_or_side": 0,
+      "analysis_shots": 219159
+    }
+  },
+  "shots": 2319756,
+  "make_rate_by_season": {
+    "2016": 0.4521,
+    "2017": 0.4572,
+    "2018": 0.4602,
+    "2019": 0.4605,
+    "2020": 0.4601,
+    "2021": 0.4661,
+    "2022": 0.4611,
+    "2023": 0.4754,
+    "2024": 0.4743,
+    "2025": 0.4672,
+    "2026": 0.471
+  },
+  "players": 1544,
+  "exact_basket_location_share_by_season": {
+    "2016": 0.0,
+    "2017": 0.0,
+    "2018": 0.0003,
+    "2019": 0.0004,
+    "2020": 0.0003,
+    "2021": 0.0267,
+    "2022": 0.0267,
+    "2023": 0.0289,
+    "2024": 0.0281,
+    "2025": 0.0259,
+    "2026": 0.0275
+  },
+  "exact_basket_location_by_family_2021_on": {
+    "tip_putback": 34343,
+    "layup": 356,
+    "dunk": 218,
+    "floater": 41,
+    "hook": 37,
+    "jumper": 28
+  },
+  "three_inside_22ft": 7,
+  "two_beyond_24ft": 1,
+  "beyond_half_court_40ft": 5417,
+  "family_share_by_season": {
+    "2016": {
+      "dunk": 0.0445,
+      "floater": 0.0383,
+      "hook": 0.0374,
+      "jumper": 0.6227,
+      "layup": 0.2229,
+      "other": 0.0001,
+      "tip_putback": 0.034
+    },
+    "2017": {
+      "dunk": 0.0458,
+      "floater": 0.0411,
+      "hook": 0.0373,
+      "jumper": 0.6207,
+      "layup": 0.2197,
+      "other": 0.0003,
+      "tip_putback": 0.0351
+    },
+    "2018": {
+      "dunk": 0.0478,
+      "floater": 0.0565,
+      "hook": 0.0371,
+      "jumper": 0.5809,
+      "layup": 0.2414,
+      "other": 0.0,
+      "tip_putback": 0.0363
+    },
+    "2019": {
+      "dunk": 0.0522,
+      "floater": 0.0663,
+      "hook": 0.0385,
+      "jumper": 0.5595,
+      "layup": 0.2429,
+      "other": 0.0,
+      "tip_putback": 0.0406
+    },
+    "2020": {
+      "dunk": 0.0526,
+      "floater": 0.0769,
+      "hook": 0.0295,
+      "jumper": 0.5591,
+      "layup": 0.2406,
+      "other": 0.0,
+      "tip_putback": 0.0412
+    },
+    "2021": {
+      "dunk": 0.0483,
+      "floater": 0.0793,
+      "hook": 0.0286,
+      "jumper": 0.5666,
+      "layup": 0.2368,
+      "other": 0.0,
+      "tip_putback": 0.0404
+    },
+    "2022": {
+      "dunk": 0.0521,
+      "floater": 0.0785,
+      "hook": 0.0288,
+      "jumper": 0.5699,
+      "layup": 0.229,
+      "other": 0.0,
+      "tip_putback": 0.0416
+    },
+    "2023": {
+      "dunk": 0.0538,
+      "floater": 0.0872,
+      "hook": 0.0306,
+      "jumper": 0.5514,
+      "layup": 0.2328,
+      "other": 0.0,
+      "tip_putback": 0.0442
+    },
+    "2024": {
+      "dunk": 0.0534,
+      "floater": 0.0839,
+      "hook": 0.0299,
+      "jumper": 0.5527,
+      "layup": 0.2353,
+      "other": 0.0,
+      "tip_putback": 0.0449
+    },
+    "2025": {
+      "dunk": 0.0547,
+      "floater": 0.0947,
+      "hook": 0.0274,
+      "jumper": 0.5536,
+      "layup": 0.2244,
+      "other": 0.0,
+      "tip_putback": 0.0452
+    },
+    "2026": {
+      "dunk": 0.0553,
+      "floater": 0.0872,
+      "hook": 0.0259,
+      "jumper": 0.5617,
+      "layup": 0.2245,
+      "other": 0.0,
+      "tip_putback": 0.0452
+    }
+  },
+  "sub_types_all_make_or_all_miss_n50": [],
+  "blank_sub_type": 81,
+  "first_shot_margin_zero_share": 0.966159436747672,
+  "score_margin_range": [
+    -78.0,
+    76.0
+  ],
+  "player_seasons": 5938,
+  "player_season_fga_quantiles": {
+    "0.1": 19.0,
+    "0.25": 90.0,
+    "0.5": 298.0,
+    "0.75": 595.0,
+    "0.9": 913.0
+  },
+  "player_seasons_200plus": 3603,
+  "leaky_columns_never_inputs": [
+    "description",
+    "action_type",
+    "points_total",
+    "is_made_shot",
+    "is_missed_shot",
+    "shot_result",
+    "score_home",
+    "score_away"
+  ]
+}
