@@ -22,7 +22,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data" / "raw"
 MANIFEST = ROOT / "data" / "manifest.csv"
 BASE = "https://github.com/sportsdataverse/sportsdataverse-data/releases/download"
-SEASONS = range(2014, 2027)  # 2013-14 through 2025-26
+SEASONS = range(2016, 2027)  # 2015-16 through 2025-26 (2015-16 and 2016-17 only for the audit check)
 FILES = ([("nba_stats_pbp", f"nba_play_by_play_{s}.parquet") for s in SEASONS]
          + [("nba_stats_schedules", f"nba_schedule_{s}.parquet") for s in SEASONS])
 

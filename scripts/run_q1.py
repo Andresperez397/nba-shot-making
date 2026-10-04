@@ -16,7 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 from shots import data, metrics, models  # noqa: E402
 
-TEST_SEASONS = list(range(2018, 2027))
+TEST_SEASONS = list(range(2020, 2027))
 SPECS = [("M0 constant", None, "const"), ("M1 distance", None, "distance"),
          ("M2 logit", "M2", "logit"), ("M2 hgb", "M2", "hgb"),
          ("M3 logit", "M3", "logit"), ("M3 hgb", "M3", "hgb"),

@@ -15,7 +15,7 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parents[2]
 RAW = ROOT / "data" / "raw"
-SEASONS = list(range(2016, 2027))  # 2015-16 through 2025-26 (ending years), one shot-type taxonomy
+SEASONS = list(range(2018, 2027))  # 2017-18 through 2025-26: one shot-type taxonomy and one rim geometry
 
 PBP_COLS = ["game_id", "order_index", "period", "seconds_remaining", "team_id", "person_id",
             "player_name", "x_legacy", "y_legacy", "shot_distance", "shot_result", "is_field_goal",

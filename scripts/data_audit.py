@@ -61,6 +61,17 @@ out["player_seasons"] = int(len(ps))
 out["player_season_fga_quantiles"] = ps.quantile([0.1, 0.25, 0.5, 0.75, 0.9]).round(0).to_dict()
 out["player_seasons_200plus"] = int((ps >= 200).sum())
 
+# 7. Rim geometry by season, including the two seasons before the window (found after the plan froze).
+rows = []
+for s in (2016, 2017, *data.SEASONS):
+    e, _ = data.load_season(s)
+    near = e[(e["distance_ft"] < 4) & (e["family"] != "tip_putback")]
+    one_two = (e["distance_ft"] > 1) & (e["distance_ft"] <= 2)
+    rows.append({"season": s, "median_y_ft_within_4ft": float(near["y_ft"].median()),
+                 "make_rate_1_to_2ft": float(e.loc[one_two, "made"].mean()),
+                 "share_1_to_2ft": float(one_two.mean())})
+out["rim_geometry_by_season"] = rows
+
 out["leaky_columns_never_inputs"] = data.LEAKY
 assert not any(data.is_leaky_name(c) for c in data.FEATURES)
 
@@ -71,7 +82,7 @@ for k in ["shots", "players", "make_rate_by_season", "exact_basket_location_shar
           "exact_basket_location_by_family_2021_on", "three_inside_22ft", "two_beyond_24ft",
           "beyond_half_court_40ft", "sub_types_all_make_or_all_miss_n50", "blank_sub_type",
           "first_shot_margin_zero_share", "score_margin_range", "player_seasons",
-          "player_season_fga_quantiles", "player_seasons_200plus"]:
+          "player_season_fga_quantiles", "player_seasons_200plus", "rim_geometry_by_season"]:
     print(k, out[k])
 for s, v in sched.items():
     print(s, v["scheduled"], v["with_pbp"], len(v["missing"]), len(v["pbp_not_scheduled"]))

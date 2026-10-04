@@ -1,17 +1,5 @@
 {
   "schedule": {
-    "2016": {
-      "scheduled": 1230,
-      "with_pbp": 1230,
-      "missing": [],
-      "pbp_not_scheduled": []
-    },
-    "2017": {
-      "scheduled": 1230,
-      "with_pbp": 1230,
-      "missing": [],
-      "pbp_not_scheduled": []
-    },
     "2018": {
       "scheduled": 1230,
       "with_pbp": 1230,
@@ -68,22 +56,6 @@
     }
   },
   "load_log": {
-    "2016": {
-      "events": 697656,
-      "regular_season_events": 599827,
-      "regular_season_games": 1230,
-      "fga": 208049,
-      "dropped_missing_result_or_side": 0,
-      "analysis_shots": 208049
-    },
-    "2017": {
-      "events": 688123,
-      "regular_season_events": 597984,
-      "regular_season_games": 1230,
-      "fga": 210114,
-      "dropped_missing_result_or_side": 0,
-      "analysis_shots": 210114
-    },
     "2018": {
       "events": 671661,
       "regular_season_events": 592820,
@@ -157,10 +129,8 @@
       "analysis_shots": 219159
     }
   },
-  "shots": 2319756,
+  "shots": 1901593,
   "make_rate_by_season": {
-    "2016": 0.4521,
-    "2017": 0.4572,
     "2018": 0.4602,
     "2019": 0.4605,
     "2020": 0.4601,
@@ -171,10 +141,8 @@
     "2025": 0.4672,
     "2026": 0.471
   },
-  "players": 1544,
+  "players": 1384,
   "exact_basket_location_share_by_season": {
-    "2016": 0.0,
-    "2017": 0.0,
     "2018": 0.0003,
     "2019": 0.0004,
     "2020": 0.0003,
@@ -193,35 +161,16 @@
     "hook": 37,
     "jumper": 28
   },
-  "three_inside_22ft": 7,
-  "two_beyond_24ft": 1,
-  "beyond_half_court_40ft": 5417,
+  "three_inside_22ft": 6,
+  "two_beyond_24ft": 0,
+  "beyond_half_court_40ft": 4220,
   "family_share_by_season": {
-    "2016": {
-      "dunk": 0.0445,
-      "floater": 0.0383,
-      "hook": 0.0374,
-      "jumper": 0.6227,
-      "layup": 0.2229,
-      "other": 0.0001,
-      "tip_putback": 0.034
-    },
-    "2017": {
-      "dunk": 0.0458,
-      "floater": 0.0411,
-      "hook": 0.0373,
-      "jumper": 0.6207,
-      "layup": 0.2197,
-      "other": 0.0003,
-      "tip_putback": 0.0351
-    },
     "2018": {
       "dunk": 0.0478,
       "floater": 0.0565,
       "hook": 0.0371,
       "jumper": 0.5809,
       "layup": 0.2414,
-      "other": 0.0,
       "tip_putback": 0.0363
     },
     "2019": {
@@ -230,7 +179,6 @@
       "hook": 0.0385,
       "jumper": 0.5595,
       "layup": 0.2429,
-      "other": 0.0,
       "tip_putback": 0.0406
     },
     "2020": {
@@ -239,7 +187,6 @@
       "hook": 0.0295,
       "jumper": 0.5591,
       "layup": 0.2406,
-      "other": 0.0,
       "tip_putback": 0.0412
     },
     "2021": {
@@ -248,7 +195,6 @@
       "hook": 0.0286,
       "jumper": 0.5666,
       "layup": 0.2368,
-      "other": 0.0,
       "tip_putback": 0.0404
     },
     "2022": {
@@ -257,7 +203,6 @@
       "hook": 0.0288,
       "jumper": 0.5699,
       "layup": 0.229,
-      "other": 0.0,
       "tip_putback": 0.0416
     },
     "2023": {
@@ -266,7 +211,6 @@
       "hook": 0.0306,
       "jumper": 0.5514,
       "layup": 0.2328,
-      "other": 0.0,
       "tip_putback": 0.0442
     },
     "2024": {
@@ -275,7 +219,6 @@
       "hook": 0.0299,
       "jumper": 0.5527,
       "layup": 0.2353,
-      "other": 0.0,
       "tip_putback": 0.0449
     },
     "2025": {
@@ -284,7 +227,6 @@
       "hook": 0.0274,
       "jumper": 0.5536,
       "layup": 0.2244,
-      "other": 0.0,
       "tip_putback": 0.0452
     },
     "2026": {
@@ -293,26 +235,93 @@
       "hook": 0.0259,
       "jumper": 0.5617,
       "layup": 0.2245,
-      "other": 0.0,
       "tip_putback": 0.0452
     }
   },
   "sub_types_all_make_or_all_miss_n50": [],
-  "blank_sub_type": 81,
-  "first_shot_margin_zero_share": 0.966159436747672,
+  "blank_sub_type": 0,
+  "first_shot_margin_zero_share": 0.9638105870313518,
   "score_margin_range": [
     -78.0,
     76.0
   ],
-  "player_seasons": 5938,
+  "player_seasons": 4978,
   "player_season_fga_quantiles": {
-    "0.1": 19.0,
-    "0.25": 90.0,
-    "0.5": 298.0,
-    "0.75": 595.0,
-    "0.9": 913.0
+    "0.1": 18.0,
+    "0.25": 82.0,
+    "0.5": 284.0,
+    "0.75": 584.0,
+    "0.9": 904.0
   },
-  "player_seasons_200plus": 3603,
+  "player_seasons_200plus": 2952,
+  "rim_geometry_by_season": [
+    {
+      "season": 2016,
+      "median_y_ft_within_4ft": 0.3,
+      "make_rate_1_to_2ft": 0.5831538224820856,
+      "share_1_to_2ft": 0.10933482016255786
+    },
+    {
+      "season": 2017,
+      "median_y_ft_within_4ft": 0.7,
+      "make_rate_1_to_2ft": 0.5803250718390804,
+      "share_1_to_2ft": 0.10599960021702505
+    },
+    {
+      "season": 2018,
+      "median_y_ft_within_4ft": 1.1,
+      "make_rate_1_to_2ft": 0.681537487134827,
+      "share_1_to_2ft": 0.11932529392037108
+    },
+    {
+      "season": 2019,
+      "median_y_ft_within_4ft": 1.1,
+      "make_rate_1_to_2ft": 0.6806501777251185,
+      "share_1_to_2ft": 0.12306682827693682
+    },
+    {
+      "season": 2020,
+      "median_y_ft_within_4ft": 1.1,
+      "make_rate_1_to_2ft": 0.6857887278877359,
+      "share_1_to_2ft": 0.11629526462395544
+    },
+    {
+      "season": 2021,
+      "median_y_ft_within_4ft": 1.1,
+      "make_rate_1_to_2ft": 0.7026063711294275,
+      "share_1_to_2ft": 0.09401883937313793
+    },
+    {
+      "season": 2022,
+      "median_y_ft_within_4ft": 1.1,
+      "make_rate_1_to_2ft": 0.7186886637313671,
+      "share_1_to_2ft": 0.08698240141748415
+    },
+    {
+      "season": 2023,
+      "median_y_ft_within_4ft": 1.2,
+      "make_rate_1_to_2ft": 0.7308537270730088,
+      "share_1_to_2ft": 0.09010721898176495
+    },
+    {
+      "season": 2024,
+      "median_y_ft_within_4ft": 1.2,
+      "make_rate_1_to_2ft": 0.7265534339065303,
+      "share_1_to_2ft": 0.08668416383937962
+    },
+    {
+      "season": 2025,
+      "median_y_ft_within_4ft": 1.2,
+      "make_rate_1_to_2ft": 0.7253324922462282,
+      "share_1_to_2ft": 0.08665448896946618
+    },
+    {
+      "season": 2026,
+      "median_y_ft_within_4ft": 1.2,
+      "make_rate_1_to_2ft": 0.7345932621199671,
+      "share_1_to_2ft": 0.08884873539302515
+    }
+  ],
   "leaky_columns_never_inputs": [
     "description",
     "action_type",
