@@ -1,0 +1,101 @@
+{
+  "2016": {
+    "events": 697656,
+    "regular_season_events": 599827,
+    "regular_season_games": 1230,
+    "fga": 208049,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 563,
+    "analysis_shots": 207486
+  },
+  "2017": {
+    "events": 688123,
+    "regular_season_events": 597984,
+    "regular_season_games": 1230,
+    "fga": 210114,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 634,
+    "analysis_shots": 209480
+  },
+  "2018": {
+    "events": 671661,
+    "regular_season_events": 592820,
+    "regular_season_games": 1230,
+    "fga": 211707,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 630,
+    "analysis_shots": 211077
+  },
+  "2019": {
+    "events": 697595,
+    "regular_season_events": 613435,
+    "regular_season_games": 1230,
+    "fga": 219458,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 542,
+    "analysis_shots": 218916
+  },
+  "2020": {
+    "events": 573047,
+    "regular_season_events": 530495,
+    "regular_season_games": 1059,
+    "fga": 188116,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 484,
+    "analysis_shots": 187632
+  },
+  "2021": {
+    "events": 596148,
+    "regular_season_events": 526268,
+    "regular_season_games": 1080,
+    "fga": 190983,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 382,
+    "analysis_shots": 190601
+  },
+  "2022": {
+    "events": 679676,
+    "regular_season_events": 600718,
+    "regular_season_games": 1230,
+    "fga": 216722,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 515,
+    "analysis_shots": 216207
+  },
+  "2023": {
+    "events": 684226,
+    "regular_season_events": 603785,
+    "regular_season_games": 1230,
+    "fga": 217219,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 508,
+    "analysis_shots": 216711
+  },
+  "2024": {
+    "events": 678771,
+    "regular_season_events": 598705,
+    "regular_season_games": 1230,
+    "fga": 218702,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 499,
+    "analysis_shots": 218203
+  },
+  "2025": {
+    "events": 689823,
+    "regular_season_events": 606536,
+    "regular_season_games": 1230,
+    "fga": 219527,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 610,
+    "analysis_shots": 218917
+  },
+  "2026": {
+    "events": 707440,
+    "regular_season_events": 621881,
+    "regular_season_games": 1230,
+    "fga": 219159,
+    "dropped_missing_result_or_side": 0,
+    "dropped_heaves": 50,
+    "analysis_shots": 219109
+  }
+}
