@@ -26,6 +26,8 @@ The expected-make model (gradient boosting) was trained only on earlier seasons 
 
 ![Information ladder](reports/figures/fig1_information_ladder.png)
 
+<img src="reports/figures/fig2_calibration.png" alt="Calibration on unseen seasons" width="380">
+
 **2. Shooters really do differ at making shots, by about 7 points per 100 shots.**
 - **Measure:** points above expected (PAE) = actual points minus expected points, per shot. It is shrunk toward the league with empirical Bayes, so a hot 300-shot season isn't treated like a 1,300-shot one.
 - **Spread:** the true spread between shooters is about 6.4–7.6 points per 100 shots (one standard deviation), depending on the season.
