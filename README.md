@@ -1,5 +1,7 @@
 # Shot-making or shot selection? Separating the two in NBA shooting
 
+[![tests](https://github.com/Andresperez397/nba-shot-making/actions/workflows/ci.yml/badge.svg)](https://github.com/Andresperez397/nba-shot-making/actions/workflows/ci.yml)
+
 A player's field-goal percentage mixes two things: **which shots they take** (shot selection, or diet) and **how often those shots go in compared with what they should** (shot-making). This project builds an expected-make model, validates it on seasons it has never seen, and then asks the questions a front office or coaching staff cares about:
 - How much do shooters really differ at making shots?
 - Is that a stable skill or mostly noise?
@@ -83,7 +85,7 @@ Across 180 pairs of consecutive team-seasons, the year-to-year correlations are:
    - with shot-making centered within each season (league-wide make rates drift; for example, 2020-21, played mostly without fans, ran 1.2 points above expectation).
 7. **Engineering:**
    - pinned requirements and data files pinned by SHA-256
-   - `ruff` and 10 `pytest` tests (leakage, natural-spline construction, pre-shot score, held-out outcome corruption, warm-start equivalence, shrinkage recovery)
+   - `ruff` and 10 `pytest` tests (leakage, natural-spline construction, pre-shot score, held-out outcome corruption, warm-start equivalence, shrinkage recovery). CI runs the lint and the 9 tests that don't need the raw data on every push
    - every README number traced to a saved table by script.
 
 ## Limitations
