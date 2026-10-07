@@ -2,6 +2,14 @@
 
 [![tests](https://github.com/Andresperez397/nba-shot-making/actions/workflows/ci.yml/badge.svg)](https://github.com/Andresperez397/nba-shot-making/actions/workflows/ci.yml)
 
+## At a glance
+
+- **Question:** How much of a player's shooting is shot-making and how much is shot selection, and is shot-making a stable skill?
+- **Answer:** Shooters differ at making shots by about 7 points per 100 shots, but making is far less stable than selection (split-half r 0.44 against 0.93). On defense, the shots a team allows carry over from year to year (r 0.77) far more than whether they go in (0.39).
+- **Why it matters:** Judge shooters on the shots they take and shot-making separately, and judge a defense on what it allows rather than on whether opponents happen to make it.
+- **Start here:** [Two-page summary](reports/NBA%20Shot-Making%20-%20Summary.pdf) · [reliability figure](reports/figures/fig3_split_half.png)
+
+
 A player's field-goal percentage mixes two things: **which shots they take** (shot selection, or diet) and **how often those shots go in compared with what they should** (shot-making). This project builds an expected-make model, validates it on seasons it has never seen, and then asks the questions a front office or coaching staff cares about:
 - How much do shooters really differ at making shots?
 - Is that a stable skill or mostly noise?
